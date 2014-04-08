@@ -40,32 +40,10 @@ reportBuild.console.start()
 then the report is in ```reportBuild.report```.
 If you want to store that on your server, you may POST it in json, or similar.
 
-## errorreport.consolecalls.js
+## errorreport.console.js
 
-It logs each calls of
-[console](https://developers.google.com/chrome-developer-tools/docs/console-api)
-[API](http://getfirebug.com/wiki/index.php/Console_API),
-thus you can study it later.
-It indirect usual calls like ```console.log``` and co.
-
-```
-var report		= {}
-var reportConsole	= new ErrorReport.ConsoleCalls(report)
-```
-
-To start overriding the console API, just do 
-
-```
-reportConsole.overrideConsoleAPI()
-```
-
-If you want to stop, just use 
-
-```
-reportConsole.stopOverrideConsoleAPI()
-```
-
-TODO talk about .log()
+It logs each calls of console API, thus you can study it later.
+It indirect usual calls like ```console.log``` and co, ```console.assert()``` 
 
 ## errorreport.javascripterror.js
 
@@ -92,39 +70,9 @@ It logs the useragent of the brower it is running on.
 It is a *free for all* zone. You can put in there whatever you want. It is for you, the user, to put 
 your own data. It will be converted to JSON when the report is produced
 
-```
-var report		= {}
-var reportUserData	= new ErrorReport.Userdata(report)
-```
-
-It will create a ```report.userData``` property in which you are free to put all your application
-specific informations
-
 ## errorreport.webaudio.js
 
 It logs the webaudio api capability of the browser.
-
-```
-var report		= {}
-var reportWebAudio	= new ErrorReport.WebAudio(report)
-```
-
-It will create a ```report.webAudios``` array of logged items. 
-To add a log item to it, just do
-
-```
-reportWebAudio.log('my own user data, optional')
-```
-
-A logged item looks like that
-
-```
-{
-	"createAt": "Tue Apr 08 2014 18:34:02 GMT+0200 (CEST)",
-	"isSupported": true,
-	"userData": "my very own data"
-}
-```
 
 ## errorreport.webgl.js
 

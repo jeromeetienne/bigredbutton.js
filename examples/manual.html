@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<body>
+<script src='../src/errorreport.builder.js'>		</script>
+<script src='../src/errorreport.consolecalls.js'>	</script>
+<script src='../src/errorreport.javascripterror.js'>	</script>
+<script src='../src/errorreport.performanceapi.js'>	</script>
+<script src='../src/errorreport.screenshots.js'>	</script>
+<script src='../src/errorreport.useragent.js'>		</script>
+<script src='../src/errorreport.userdata.js'>		</script>
+<script src='../src/errorreport.webaudio.js'>		</script>
+<script src='../src/errorreport.webgl.js'>		</script>
+
+<!--
+<script src='../errorreport.js'>		</script>
+-->
+<script>
+	var report		= {}
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//		errorreport.console.js						//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	var reportConsole	= new ErrorReport.ConsoleCalls(report)
+	reportConsole.overrideConsoleAPI()
+	var data	= {}
+	// data.data	= data;
+	console.log('wow super', data);
+	console.error('wow super', 'error');
+	
+	//////////////////////////////////////////////////////////////////////////////////
+	//		errorreport.screenshots.js					//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	// var reportScreenshots	= new ErrorReport.Screenshots(report, function(){
+	// 	console.log('a screenshots occured')
+	// })
+	// var dataUrl	= 'data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7'
+	// reportScreenshots.logDataUrl(dataUrl, 'super screenshot')
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//		errorreport.performanceapi.js					//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	// var reportPerformanceAPI= new ErrorReport.PerformanceAPI(report, function(log){
+	// 	console.log('a performance api log occured')
+	// 	console.dir(log)
+	// })
+	// reportPerformanceAPI.log('super performance')
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//		errorreport.performanceapi.js					//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	// var reportUserAgent	= new ErrorReport.UserAgent(report)
+	// reportPerformanceAPI.log('super performance')
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//		errorreport.javascripterror.js					//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	// var reportJsError	= new ErrorReport.JavascriptError(report, function(){
+	// 	var lastJsError	= report.jsErrors[report.jsErrors.length-1]
+	// 	//console.log('Javascript error occured', lastJsError)
+
+	// 	console.log('full report')
+	// 	console.dir(report)
+	// })	
+	// undefined()
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//		errorreport.WebGl.js					//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	// var reportWebGL	= new ErrorReport.WebGl(report)
+	// reportWebGL.log('super webgl item')
+
+	//////////////////////////////////////////////////////////////////////////////////
+	//		errorreport.WebGl.js					//
+	//////////////////////////////////////////////////////////////////////////////////
+	
+	// var reportWebAudio	= new ErrorReport.WebAudio(report)
+	// reportWebAudio.log('super webgl item')
+</script></body>

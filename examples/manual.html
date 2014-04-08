@@ -78,6 +78,7 @@
 	//		errorreport.WebGl.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	// var reportWebAudio	= new ErrorReport.WebAudio(report)
-	// reportWebAudio.log('super webgl item')
+	var reportWebAudio	= new ErrorReport.WebAudio(report)
+	var item		= reportWebAudio.log('my very own data')
+	console.log('web audio item', JSON.stringify(item, null, '\t'))
 </script></body>

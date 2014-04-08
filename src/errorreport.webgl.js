@@ -11,11 +11,11 @@ ErrorReport.WebGl	= function(report){
 	this.log	= function(userData){
 		var item	= {}
 		// from detector.js	https://github.com/mrdoob/three.js/blob/master/examples/js/Detector.js
-		item.isSupported	= (function (){
+		item.isSupported= (function (){
 			try {
 				var canvas = document.createElement( 'canvas' );
 				return !! window.WebGLRenderingContext && ( canvas.getContext( 'webgl' ) || canvas.getContext( 'experimental-webgl' ) );
-			} catch( e ) {
+			}catch( e ){
 				return false;
 			}
 		})() ? true : false

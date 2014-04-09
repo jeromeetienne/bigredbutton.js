@@ -1,12 +1,12 @@
-var ErrorReport	= ErrorReport	|| {}
+var BigRedButton	= BigRedButton	|| {}
 
-ErrorReport.Screenshots	= function(report, callback){
+BigRedButton.Screenshots	= function(report, callback){
 	callback	= callback	|| function(){}
 	this.report		= report
 	report.screenshots	= []
 	
 	this.logCanvas	= function(canvas, userData){
-		var dataUrl	= canvas.toDataUrl()
+		var dataUrl	= canvas.toDataURL()
 		return this.logDataUrl(dataUrl, userData)
 	}
 

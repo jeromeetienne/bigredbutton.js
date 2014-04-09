@@ -2,10 +2,10 @@
 <body>
 <script src='../src/bigredbutton.builder.js'>		</script>
 <script src='../src/bigredbutton.consolecalls.js'>	</script>
-<script src='../src/bigredbutton.javascripterror.js'>	</script>
-<script src='../src/bigredbutton.performanceapi.js'>	</script>
 <script src='../src/bigredbutton.screenshots.js'>	</script>
 <script src='../src/bigredbutton.useragent.js'>		</script>
+<script src='../src/bigredbutton.javascripterror.js'>	</script>
+<script src='../src/bigredbutton.performanceapi.js'>	</script>
 <script src='../src/bigredbutton.userdata.js'>		</script>
 <script src='../src/bigredbutton.webaudio.js'>		</script>
 <script src='../src/bigredbutton.webgl.js'>		</script>
@@ -19,12 +19,14 @@
 	//////////////////////////////////////////////////////////////////////////////////
 	//		bigredbutton.console.js						//
 	//////////////////////////////////////////////////////////////////////////////////
-	
+
 	var reportConsole	= new BigRedButton.ConsoleCalls(report)
 	reportConsole.overrideConsoleAPI()
+
 	var data	= {}
-	// data.data	= data;
+	data.data	= data;
 	console.log('wow super', data);
+
 	console.error('wow super', 'error');
 	
 	//////////////////////////////////////////////////////////////////////////////////

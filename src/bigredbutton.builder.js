@@ -1,27 +1,29 @@
-var ErrorReport	= ErrorReport	|| {}
+var BigRedButton	= BigRedButton	|| {}
 
-ErrorReport.Builder	= function(report){
+BigRedButton.Builder	= function(report){
 	report		= report	|| {}
+	
+	report.createAt	= Date()
 	
 	//////////////////////////////////////////////////////////////////////////////////
 	//		errorreport.console.js						//
 	//////////////////////////////////////////////////////////////////////////////////
 		
-	var reportConsole	= new ErrorReport.ConsoleCalls(report)
+	var reportConsole	= new BigRedButton.ConsoleCalls(report)
 	this.consoleCalls	= reportConsole
 	
 	//////////////////////////////////////////////////////////////////////////////////
 	//		errorreport.screenshots.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	var reportScreenshots	= new ErrorReport.Screenshots(report)
+	var reportScreenshots	= new BigRedButton.Screenshots(report)
 	this.screenshots	= reportScreenshots
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		errorreport.performanceapi.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	var reportPerformanceAPI	= new ErrorReport.PerformanceAPI(report)
+	var reportPerformanceAPI	= new BigRedButton.PerformanceAPI(report)
 	reportPerformanceAPI.log('super performance')
 	
 	//////////////////////////////////////////////////////////////////////////////////

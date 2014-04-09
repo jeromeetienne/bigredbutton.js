@@ -1,6 +1,6 @@
-var ErrorReport	= ErrorReport	|| {}
+var BigRedButton	= BigRedButton	|| {}
 
-ErrorReport.WebAudio	= function(){
+BigRedButton.WebAudio	= function(){
 	this.report	= report
 	
 	report.webAudio	= []

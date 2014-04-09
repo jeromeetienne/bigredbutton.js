@@ -1,9 +1,9 @@
-var ErrorReport	= ErrorReport	|| {}
+var BigRedButton	= BigRedButton	|| {}
 
 /**
  * kudos to http://webglreport.com
  */
-ErrorReport.WebGl	= function(report){
+BigRedButton.WebGl	= function(report){
 	this.report	= report
 	
 	report.webgl	= []

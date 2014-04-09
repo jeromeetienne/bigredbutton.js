@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<body>
+<h2>Report</h2><pre id='report'></pre>
+<script src='../src/bigredbutton.screenshots.js'></script>
+<script>
+	// create a canvas
+	var canvas	= document.createElement('canvas')
+	document.body.appendChild(canvas)
+	canvas.width	= 256
+	canvas.height	= 256
+	var context	= canvas.getContext("2d")
+	context.fillRect(10, 20, 200, 100)
+	
+	// create the reportScreenshots
+	var report		= {}
+	var reportScreenshots	= new BigRedButton.Screenshots(report)
+
+	// log the canvas in the report
+	reportScreenshots.logCanvas(canvas)
+
+	// display the report
+	document.querySelector('#report').innerText	= JSON.stringify(report, null, '\t')
+</script></body>

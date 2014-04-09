@@ -1,6 +1,6 @@
-var ErrorReport	= ErrorReport	|| {}
+var BigRedButton	= BigRedButton	|| {}
 
-ErrorReport.ConsoleCalls= function(report, callback){
+BigRedButton.ConsoleCalls= function(report, callback){
 	callback	= callback	|| function(){}
 	this.start	= function(){
 		console.log('not yet implemented')

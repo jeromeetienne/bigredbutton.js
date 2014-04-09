@@ -1,6 +1,6 @@
-var ErrorReport	= ErrorReport	|| {}
+var BigRedButton	= BigRedButton	|| {}
 
-ErrorReport.PerformanceAPI	= function(report, callback){
+BigRedButton.PerformanceAPI	= function(report, callback){
 	callback	= callback	|| function(){}
 	report.performanceAPIs	= []
 	

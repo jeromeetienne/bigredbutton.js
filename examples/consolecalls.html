@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<h2>Report</h2><pre id='report'></pre>
+<script src='../src/bigredbutton.consolecalls.js'></script>
+<script>
+	// create the repotConsole
+	var report		= {}
+	var reportConsole	= new BigRedButton.ConsoleCalls(report)
+	// overrite console api
+	reportConsole.overrideConsoleAPI()
+	// use console.log
+	var data	= {}
+	// data.data	= data;	// to test circular references
+	console.log('wow super log', data);
+	// use console.error
+	console.error('wow super error');
+
+	// ... here run your apps
+
+	// overrite console api
+	reportConsole.stopOverrideConsoleAPI()
+
+	// display the report
+	document.querySelector('#report').innerText	= JSON.stringify(report, null, '\t')
+</script></body>

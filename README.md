@@ -29,7 +29,6 @@ bower install bigredbutton
 How To Use It
 =============
 
-
 ## bigredbutton.creator.js
 
 ```

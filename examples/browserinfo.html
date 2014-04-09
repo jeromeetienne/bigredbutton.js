@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<h2>Report</h2><pre id='report'></pre>
+<script src='../src/bigredbutton.browserinfo.js'></script>
+<script>
+	// create the repotConsole
+	var report		= {}
+	var reportBrowserInfo	= new BigRedButton.BrowserInfo(report)
+	
+	// log an item in the report
+	reportBrowserInfo.log()
+
+	// display the report
+	document.querySelector('#report').innerText	= JSON.stringify(report, null, '\t')
+</script></body>

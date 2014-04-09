@@ -1,9 +1,9 @@
-var ErrorReport	= ErrorReport	|| {}
+var BigRedButton	= BigRedButton	|| {}
 
 /**
  * detect and log js error
  */
-ErrorReport.JavascriptError	= function(report, callback){
+BigRedButton.JavascriptError	= function(report, callback){
 	callback	= callback	|| function(){}
 
 	// init some variables

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <body>
-<script src='../src/errorreport.builder.js'>		</script>
-<script src='../src/errorreport.consolecalls.js'>	</script>
-<script src='../src/errorreport.javascripterror.js'>	</script>
-<script src='../src/errorreport.performanceapi.js'>	</script>
-<script src='../src/errorreport.screenshots.js'>	</script>
-<script src='../src/errorreport.useragent.js'>		</script>
-<script src='../src/errorreport.userdata.js'>		</script>
-<script src='../src/errorreport.webaudio.js'>		</script>
-<script src='../src/errorreport.webgl.js'>		</script>
+<script src='../src/bigredbutton.builder.js'>		</script>
+<script src='../src/bigredbutton.consolecalls.js'>	</script>
+<script src='../src/bigredbutton.javascripterror.js'>	</script>
+<script src='../src/bigredbutton.performanceapi.js'>	</script>
+<script src='../src/bigredbutton.screenshots.js'>	</script>
+<script src='../src/bigredbutton.useragent.js'>		</script>
+<script src='../src/bigredbutton.userdata.js'>		</script>
+<script src='../src/bigredbutton.webaudio.js'>		</script>
+<script src='../src/bigredbutton.webgl.js'>		</script>
 
 <!--
-<script src='../errorreport.js'>		</script>
+<script src='../bigredbutton.js'>		</script>
 -->
 <script>
 	var report		= {}
 
 	//////////////////////////////////////////////////////////////////////////////////
-	//		errorreport.console.js						//
+	//		bigredbutton.console.js						//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	var reportConsole	= new ErrorReport.ConsoleCalls(report)
+	var reportConsole	= new BigRedButton.ConsoleCalls(report)
 	reportConsole.overrideConsoleAPI()
 	var data	= {}
 	// data.data	= data;
@@ -28,37 +28,37 @@
 	console.error('wow super', 'error');
 	
 	//////////////////////////////////////////////////////////////////////////////////
-	//		errorreport.screenshots.js					//
+	//		bigredbutton.screenshots.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	// var reportScreenshots	= new ErrorReport.Screenshots(report, function(){
+	// var reportScreenshots	= new BigRedButton.Screenshots(report, function(){
 	// 	console.log('a screenshots occured')
 	// })
 	// var dataUrl	= 'data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7'
 	// reportScreenshots.logDataUrl(dataUrl, 'super screenshot')
 
 	//////////////////////////////////////////////////////////////////////////////////
-	//		errorreport.performanceapi.js					//
+	//		bigredbutton.performanceapi.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	// var reportPerformanceAPI= new ErrorReport.PerformanceAPI(report, function(log){
+	// var reportPerformanceAPI= new BigRedButton.PerformanceAPI(report, function(log){
 	// 	console.log('a performance api log occured')
 	// 	console.dir(log)
 	// })
 	// reportPerformanceAPI.log('super performance')
 
 	//////////////////////////////////////////////////////////////////////////////////
-	//		errorreport.performanceapi.js					//
+	//		bigredbutton.performanceapi.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	// var reportUserAgent	= new ErrorReport.UserAgent(report)
+	// var reportUserAgent	= new BigRedButton.UserAgent(report)
 	// reportPerformanceAPI.log('super performance')
 
 	//////////////////////////////////////////////////////////////////////////////////
-	//		errorreport.javascripterror.js					//
+	//		bigredbutton.javascripterror.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	// var reportJsError	= new ErrorReport.JavascriptError(report, function(){
+	// var reportJsError	= new BigRedButton.JavascriptError(report, function(){
 	// 	var lastJsError	= report.jsErrors[report.jsErrors.length-1]
 	// 	//console.log('Javascript error occured', lastJsError)
 
@@ -68,16 +68,16 @@
 	// undefined()
 
 	//////////////////////////////////////////////////////////////////////////////////
-	//		errorreport.WebGl.js					//
+	//		bigredbutton.WebGl.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	// var reportWebGL	= new ErrorReport.WebGl(report)
+	// var reportWebGL	= new BigRedButton.WebGl(report)
 	// reportWebGL.log('super webgl item')
 
 	//////////////////////////////////////////////////////////////////////////////////
-	//		errorreport.WebGl.js					//
+	//		bigredbutton.WebGl.js					//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	// var reportWebAudio	= new ErrorReport.WebAudio(report)
+	// var reportWebAudio	= new BigRedButton.WebAudio(report)
 	// reportWebAudio.log('super webgl item')
 </script></body>

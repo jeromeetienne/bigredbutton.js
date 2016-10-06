@@ -10,4 +10,7 @@ deploy:
 	git commit -a -m "New deploy" && git push -f origin HEAD:gh-pages && git reset HEAD~
 
 build:
-	cat src/*.js >bigredbutton.js
+	cat src/*.js >build/bigredbutton.js
+
+
+.PHONY: build

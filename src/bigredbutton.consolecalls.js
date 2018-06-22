@@ -42,7 +42,7 @@ BigRedButton.ConsoleCalls= function(report, callback){
 	//////////////////////////////////////////////////////////////////////////////////
 	
 	var oldConsole		= {}
-	var loggedCallNames	= ['log', 'warn', 'error']
+	var loggedCallNames	= ['log', 'warn', 'error', 'debug']
 	this.overrideConsoleAPI	= function(){
 		loggedCallNames.forEach(function(callName){
 			// store old call
